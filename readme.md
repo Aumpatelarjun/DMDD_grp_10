@@ -45,6 +45,12 @@ The project scope encompasses the development of a comprehensive airline managem
 - Run the application: npm start or yarn start
 
 ## Contributors
+Aaryan Praveen 
+Aishwarya Vikas Patil
+Chaitya Vohera
+Nilvi Shah
+Aum Patel
+
 
 - [Your Name]
 - [Contributor 1]
