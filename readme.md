@@ -40,7 +40,7 @@ The project scope encompasses the development of a comprehensive airline managem
 
 ## Getting Started
 
-- Clone the repository: git clone [repository_url]
+- Clone the repository: git clone (https://github.com/Aumpatelarjun/DMDD_grp_10.git)
 - Install dependencies: npm install or yarn install
 - Run the application: npm start or yarn start
 
@@ -51,10 +51,6 @@ Chaitya Vohera
 Nilvi Shah
 Aum Patel
 
-
-- [Your Name]
-- [Contributor 1]
-- [Contributor 2]
 
 ## License
 
