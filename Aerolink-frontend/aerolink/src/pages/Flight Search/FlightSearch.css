@@ -1,0 +1,36 @@
+/* FlightSearchView.css */
+.flight-search-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 8px;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.search-form input[type="date"],
+.search-form input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-button:hover {
+  background-color: #003580;
+}
