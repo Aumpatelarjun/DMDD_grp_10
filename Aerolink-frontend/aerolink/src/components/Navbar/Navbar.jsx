@@ -1,39 +1,38 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './Navbar.css'; // Make sure to create a corresponding CSS file for styling
+import { Link, useHistory } from 'react-router-dom';
+import './Navbar.css';
+import { useNavigate } from 'react-router-dom';
+const logo = require("../../Aerolink-Logo.webp");
 
 const Navbar = () => {
+
+  const navigate = useNavigate();
   return (
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          YourLogo
+          <img height={70} width={70} src={logo} alt="" />
         </Link>
         <ul className="nav-menu">
           <li className="nav-item">
-            <Link to="/" className="nav-links">
+            <span className="nav-links" onClick={() => navigate('/')}>
               Home
-            </Link>
+            </span>
           </li>
           <li className="nav-item">
-            <Link to="/services" className="nav-links">
+            <span className="nav-links" onClick={() => navigate('/services')}>
               Services
-            </Link>
+            </span>
           </li>
           <li className="nav-item">
-            <Link to="/about" className="nav-links">
+            <span className="nav-links" onClick={() => navigate('/about')}>
               About
-            </Link>
+            </span>
           </li>
           <li className="nav-item">
-            <Link to="/contact" className="nav-links">
-              Contact
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/login" className="nav-links">
+            <span className="nav-links" onClick={() => navigate('/login')}>
               Login
-            </Link>
+            </span>
           </li>
         </ul>
       </div>
