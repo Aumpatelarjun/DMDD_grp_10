@@ -5,6 +5,9 @@ import FlightSearch from './pages/Flight Search/FlightSearch';
 import Register from './pages/Register/Register';
 import Login from './pages/Login/Login';
 import Homepage from './pages/Homepage/Homepage';
+import FlightExplorePage from './pages/FlightExplorePage/FlightExplorePage';
+import FlightSpecificPage from './pages/FlightSpecificPage/FlightSpecificPage';
+import BookFlight from './pages/BookFlight/BookFlight';
 
 // import Home from './pages/Home';
 // import Services from './pages/Services';
@@ -19,6 +22,9 @@ function App() {
       <Routes>
         {/* <Route path="/" exact component={Home} /> */}
         <Route path="/search" element={<FlightSearch/>} />
+        <Route exact path="/flight/:flightId" element={<FlightSpecificPage/>} />
+        <Route path="/explore" element={<FlightExplorePage/>} />
+        <Route path="/bookFlight" element={<BookFlight/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/register" element={<Register/>} />
         <Route path="/" element={<Homepage/>} />

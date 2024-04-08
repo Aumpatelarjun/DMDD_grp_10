@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import '../../App.css';
-
+import { register } from '../../services';
+import { useNavigate } from 'react-router-dom';
 function Register() {
   const [user, setUser] = useState({
     username: '',
     email: '',
     password: '',
   });
-
+  const navigate = useNavigate();
   const handleChange = (e) => {
     const { name, value } = e.target;
     setUser((prevUser) => ({
@@ -16,10 +17,13 @@ function Register() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log('User Registration Details:', user);
+    const data = await register(user);
+    console.log(data);
     // Here you'd typically send the user details to the backend
+    navigate('/login');
   };
 
   return (

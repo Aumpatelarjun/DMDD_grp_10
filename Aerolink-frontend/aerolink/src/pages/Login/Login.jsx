@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import '../../App.css'; 
+import { Link, useNavigate } from 'react-router-dom';
+import './Login.css';
 import { login } from '../../services';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
 
-function Login() {
+const Login = () => {
   const [loginDetails, setLoginDetails] = useState({
     username: '',
     password: '',
   });
-
-  const navigate = useNavigate(); // Initialize the useNavigate hook
+  const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem('isLoggedIn') === 'true');
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,15 +19,15 @@ function Login() {
     }));
   };
 
-  const  handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log('Login Details:', loginDetails);
     const userData = await login(loginDetails.username, loginDetails.password);
     console.log(userData);
-    
-    // Assuming userData contains information about successful login
     if (userData) {
-      // Redirect to homepage
+      localStorage.setItem('isLoggedIn', 'true');
+      setIsLoggedIn(true);
+      localStorage.setItem('user', JSON.stringify(userData)); // Store user data in localStorage
       navigate('/');
     }
   };
@@ -58,10 +58,10 @@ function Login() {
             required
           />
         </div>
-        <button type="submit" className="form-button login-button">Login</button>
+        <button type="submit" className="form-button">Login</button>
       </form>
     </div>
   );
-}
+};
 
 export default Login;

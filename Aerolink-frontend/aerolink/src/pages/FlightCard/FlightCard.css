@@ -1,0 +1,37 @@
+.flight-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.flight-card:hover {
+  transform: translateY(-4px);
+}
+
+.flight-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.flight-card p {
+  margin: 5px 0;
+}
+
+.flight-card p:first-child {
+  margin-top: 0;
+}
+
+.flight-card p:last-child {
+  margin-bottom: 0;
+}
+.flight-card-link{
+  text-decoration: none;
+  color: black;
+}
+Link{
+  text-decoration: none;
+}

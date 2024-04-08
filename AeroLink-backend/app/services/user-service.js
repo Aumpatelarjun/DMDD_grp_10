@@ -15,8 +15,10 @@ export const getUser = async (id) => {
 };
 export async function registerUser(username, password, email) {
   // const hashedPassword = hashPassword(password); // Assume this function hashes the password
+  console.log(username,password,email)
   const hashedPassword = await bcrypt.hash(password, salt);
-  const query = `INSERT INTO Account (Username, User_Password, Email_ID) VALUES (${username}, ${hashedPassword}, ${email})`;
+  console.log(hashedPassword,"hash")
+  const query = `INSERT INTO Account (Username, User_Password, Email_ID) VALUES ('${username}', '${hashedPassword}', '${email}')`;
   const result = await executeQuery(query);
   return { username, email };
 }
@@ -27,7 +29,7 @@ export async function loginUser(username, password) {
   if (user) {
     const match = await bcrypt.compare(password, user[0].User_Password);
     if (match) {
-      return true;
+      return user;
     }
   }
   return false;

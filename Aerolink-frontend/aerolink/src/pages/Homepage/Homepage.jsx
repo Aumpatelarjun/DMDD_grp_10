@@ -1,6 +1,7 @@
 // Homepage.js
 import React from 'react';
 import './Homepage.css'; // Import CSS file for styling
+import { Link } from 'react-router-dom';
 
 function Homepage() {
   return (
@@ -9,7 +10,9 @@ function Homepage() {
         <div className="hero-content">
           <h1>Welcome to <span>AeroLink</span></h1>
           <p>Your ultimate destination for hassle-free flight management</p>
-          <button className="btn">Explore Flights</button>
+         <Link to={`/explore`} style={{ textDecoration: 'none', color: 'inherit' }}>
+            <button className="btn">Explore Flights</button>
+         </Link>
         </div>
       </div>
       <div className="features">

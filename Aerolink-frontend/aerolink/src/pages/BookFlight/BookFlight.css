@@ -1,0 +1,40 @@
+.book-flight-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-flight-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.book-flight-form input,
+.book-flight-form select {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.book-flight-form select {
+  appearance: none;
+}
+
+.book-flight-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book-flight-button:hover {
+  background-color: #0056b3;
+}
