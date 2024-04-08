@@ -3,7 +3,7 @@ import initialize from './app/app.js'
 import db  from "./app/db.js"; 
 import executeQuery from './app/db.js';
 const app = express();
-const port = 3000; // You can change the port number if needed
+const port = 8000; // You can change the port number if needed
 
 
 initialize(app)

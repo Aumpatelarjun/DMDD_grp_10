@@ -11,7 +11,7 @@ export default function executeQuery(query) {
                 reject(err); // Reject the promise with the error
             } else {
                 // Log the rows retrieved from the database
-                console.log(rows);
+                console.log(rows,"rows");
                 resolve(rows); // Resolve the promise with the rows retrieved from the database
             }
         });

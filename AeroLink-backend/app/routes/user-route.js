@@ -7,4 +7,14 @@ userRouter
   .route("/id/:id")
   .get(userController.getUser);
 
+userRouter
+  .route("/register")
+  .post(userController.register);
+
+  userRouter
+  .route("/:email").get(userController.searchUserByEmailId);
+
+  userRouter
+  .route("/login").post(userController.login);
+
 export default userRouter;

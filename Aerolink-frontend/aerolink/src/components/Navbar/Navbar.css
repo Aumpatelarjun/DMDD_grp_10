@@ -1,6 +1,6 @@
 /* Navbar.css */
 .navbar {
-  background: #333;
+  background: #007bff;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -22,7 +22,7 @@
 }
 
 .navbar-logo {
-  color: #fff;
+
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
@@ -48,6 +48,7 @@
   display: flex;
   align-items: center;
   height: 80px;
+  cursor: pointer;
 }
 
 .nav-links {
@@ -60,7 +61,7 @@
 }
 
 .nav-links:hover {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #007bff;;
   transition: all 0.2s ease-out;
 }
 

@@ -1,0 +1,134 @@
+/* Homepage.css */
+
+/* Hero Section */
+.hero {
+  height: 60vh;
+  background-image: url('https://plus.unsplash.com/premium_photo-1664362416374-4f734db57037?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); ; /* Example image, replace with your own */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.hero span {
+  color: #007bff;
+}
+.btn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.feature {
+  flex: 0 1 30%;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 1rem;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature p {
+  font-size: 1.4rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+  background-color: #f9f9f9;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.testimonial {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+  font-size: 1.6rem;
+}
+
+.testimonial cite {
+  font-style: italic;
+}
+
+/* Footer Section */
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.social-links a i {
+  font-size: 2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-links a i:hover {
+  color: #007bff;
+}
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}

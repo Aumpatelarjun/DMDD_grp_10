@@ -1,0 +1,72 @@
+/* AirportManage.css */
+.airport-manage-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .manage-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .manage-form input[type="text"],
+  .manage-form input[type="email"],
+  .manage-form select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+  }
+  
+  .manage-button {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .manage-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .airports-list {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .airports-list li {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .airports-list li button {
+    padding: 6px 15px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .airports-list li button:hover {
+    background-color: #bd2130;
+  }
