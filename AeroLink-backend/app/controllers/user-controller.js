@@ -54,3 +54,16 @@ export async function searchUserByEmailId(req, res) {
         setDataErrorResponse(error, res)
     }
 }
+
+export async function getReservationDetails(req, res) {
+    const accountID = req.params.accountID;
+    console.log(accountID,"accountId");
+    try {
+        const result = await userService.getReservationDetails(accountID);
+        setResponse({"type":"Reservation","data":result}, res);
+
+    } catch (error) {
+        console.error('Incorrect AccountID:', error);
+        setDataErrorResponse(error, res)
+    }
+}

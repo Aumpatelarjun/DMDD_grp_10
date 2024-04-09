@@ -8,6 +8,7 @@ import Homepage from './pages/Homepage/Homepage';
 import FlightExplorePage from './pages/FlightExplorePage/FlightExplorePage';
 import FlightSpecificPage from './pages/FlightSpecificPage/FlightSpecificPage';
 import BookFlight from './pages/BookFlight/BookFlight';
+import ConfirmationPage from './pages/Confirmation/ConfirmationPage';
 
 // import Home from './pages/Home';
 // import Services from './pages/Services';
@@ -28,6 +29,7 @@ function App() {
         <Route path="/login" element={<Login/>} />
         <Route path="/register" element={<Register/>} />
         <Route path="/" element={<Homepage/>} />
+        <Route path="/confirmation" element={<ConfirmationPage/>} />
         {/* <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route path="/login" component={Login} /> */}

@@ -50,3 +50,11 @@ export const bookFlight = async(bookingDetails) =>{
     throw error;
   }
 }
+export const getAccountDetails = async (accountID) => {
+  try {
+    const response = await axios.get(`${API_URL}/user/account/${accountID}`);
+    return response.data;
+  } catch (error) {
+    throw error;
+  }
+};

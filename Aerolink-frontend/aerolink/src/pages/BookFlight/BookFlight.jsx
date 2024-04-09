@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import './BookFlight.css';
 import { bookFlight } from '../../services';
+import { useNavigate } from 'react-router-dom';
 
 const BookFlight = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     username: '',
     flightID: '',
@@ -26,7 +28,17 @@ const BookFlight = () => {
     // Add logic to submit form data
     console.log(formData);
     console.log('Form submitted:', formData);
-    const data = await bookFlight(formData);
+   
+    try {
+      // Add logic to submit form data
+      const data = await bookFlight(formData);
+      console.log('Booking successful:', data);
+  
+      // Redirect to Confirmation page after successful booking
+      navigate('/confirmation');
+    } catch (error) {
+      console.error('Error booking flight:', error);
+    }
   };
 
   return (

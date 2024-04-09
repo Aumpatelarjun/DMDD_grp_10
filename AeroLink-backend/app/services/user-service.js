@@ -46,3 +46,9 @@ export async function searchUserByUsername(username) {
   const result = await executeQuery(query);
   return result;
 }
+export async function getReservationDetails(accountID) {
+  console.log(accountID, "username");
+  const query = `SELECT * FROM Reservation WHERE Account_ID = '${accountID}'`;
+  const result = await executeQuery(query);
+  return result;
+}

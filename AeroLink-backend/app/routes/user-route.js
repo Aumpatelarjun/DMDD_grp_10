@@ -17,4 +17,7 @@ userRouter
   userRouter
   .route("/login").post(userController.login);
 
+  userRouter
+  .route("/account/:accountID").get(userController.getReservationDetails);
+
 export default userRouter;
